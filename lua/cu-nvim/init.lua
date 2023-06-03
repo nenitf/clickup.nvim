@@ -5,7 +5,7 @@ local M = {
   config = default_config
 }
 
-local function autocmd()
+local function clickup()
   vim.api.nvim_create_user_command('CU', function()
       local env = M.config.env
 
@@ -44,7 +44,7 @@ end
 
 M.setup = function(args)
   M.config = vim.tbl_deep_extend("force", M.config, args or {})
-  autocmd()
+  clickup()
 end
 
 return M
