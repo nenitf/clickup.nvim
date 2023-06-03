@@ -1,4 +1,5 @@
-*cu.txt* A ClickUp wrapper
+*cu.txt* *CU*
+A ClickUp wrapper
 
 COMMANDS
 
