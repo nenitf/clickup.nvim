@@ -1,0 +1,8 @@
+*cu.txt* A ClickUp wrapper
+
+COMMANDS
+
+*:CU*
+Exibição de todos os tickets
+
+vim:tw=78:et:ft=help:norl:

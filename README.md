@@ -1,25 +1,23 @@
-<!-- panvimdoc-ignore-start -->
+# CU.nvim
 
-# clickup.nvim
+Integração simples com [ClickUp](https://clickup.com/)
 
-Integração simples com clickup
+Leia `:help CU`.
 
-- Listar tickets do clickup
+> Explicando a piada: O nome `CU` é proposital visto que as branches criadas a partir do ClickUp sempre possuem esse prefixo, não sendo configurável. Fazendo com que todos PRs sejam de uma branch *CU alguma coisa* para *develop*.
 
-<!-- panvimdoc-ignore-end -->
-
-# Installation
+## Installation
 
 **Using Packer**
 
 ```lua
 use {
-'nenitf/clickup.nvim',
+'nenitf/cu.nvim',
 requires = {
   'nvim-lua/plenary.nvim',
 },
 config = function()
-  require('clickup-nvim').setup({
+  require('cu-nvim').setup({
     env = {
       api_token = vim.env.CLICKUP_API_TOKEN,
       user_id = vim.env.CLICKUP_USER_ID,
@@ -31,7 +29,7 @@ end,
 }
 ```
 
-# Configuration
+## Configuration
 
 - Recomendo utilizar `vim.env.NOMEDEVARIAVEL` a partir de um arquivo não versionado
 
@@ -59,9 +57,3 @@ local default_config = {
 - `env.default_workspace`: Workspace
 - `env.default_space`: Space
 - `env.filters.statuses`: Status que devem aparecer
-
-# Usage
-
-#### :Clickup {doc=:Clickup}
-
-Listar todos tickets na quick fix list

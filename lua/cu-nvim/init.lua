@@ -1,12 +1,12 @@
 local curl = require("plenary.curl")
-local default_config = require("clickup-nvim.config")
+local default_config = require("cu-nvim.config")
 
 local M = {
   config = default_config
 }
 
 local function autocmd()
-  vim.api.nvim_create_user_command('Clickup', function()
+  vim.api.nvim_create_user_command('CU', function()
       local env = M.config.env
 
       local statuses = ""
