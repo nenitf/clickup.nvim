@@ -12,20 +12,20 @@ Leia `:help CU`.
 
 ```lua
 use {
-'nenitf/cu.nvim',
-requires = {
-  'nvim-lua/plenary.nvim',
-},
-config = function()
-  require('cu-nvim').setup({
-    env = {
-      api_token = vim.env.CLICKUP_API_TOKEN,
-      user_id = vim.env.CLICKUP_USER_ID,
-      default_workspace = vim.env.CLICKUP_WORKSPACE_ID,
-      default_space = vim.env.CLICKUP_SPACE_ID,
-    }
-  })
-end,
+  'nenitf/cu.nvim',
+  requires = {
+    'nvim-lua/plenary.nvim',
+  },
+  config = function()
+    require('cu-nvim').setup({
+      env = {
+        api_token = vim.env.CLICKUP_API_TOKEN,
+        user_id = vim.env.CLICKUP_USER_ID,
+        default_workspace = vim.env.CLICKUP_WORKSPACE_ID,
+        default_space = vim.env.CLICKUP_SPACE_ID,
+      }
+    })
+  end,
 }
 ```
 
